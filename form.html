@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приэльбрусье</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+
+    
+
+    <header class="page-header">
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+        <ul class="page-header__menu-list main-menu">
+          <li class="main-menu__item main-menu__item--filled">
+            <div class="container">
+              <a class="main-menu__logo" href="index.html">
+                 <img src="img/logo-site.png" alt="logotip">
+              </a>
+              <button class="main-menu__toggle-btn main-menu__toggle-btn--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
+          </li>
+          <li class="main-menu__item">
+            <ul class="main-menu__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Отзывы</a>
+              </li>
+                          </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-title">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <div class="container">
+          <p class="content-title__text content-title__text--wide">Расскажите о своих впечатлениях и мыслях</p>
+        </div>
+      </section>
+
+      <section class="content-desc">
+            <div class="container">
+          <p class="content-desc__text content-desc__text--wide">Заполните пожалуйста короткую форму: </p>
+        </div>
+      </section>
+
+      <section class="content-form">
+            <form class="content-form__client-data elbrus-form" action="#" method="post" name="client-form">
+
+          <fieldset class="elbrus-form__data-personal data-personal">
+            <legend class="data-personal__title visually-hidden">Персональные данные</legend>
+            <ul class="data-personal__personal-list personal-list">
+              <li class="personal-list__item">
+                <label class="personal-list__value" for="personal-list__last-name">Фамилия:</label>
+                <input class="personal-list__field" id="personal-list__last-name" type="text" name="last-name" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы.">
+              </li>
+              <li class="personal-list__item">
+                <label class="personal-list__value" for="personal-list__first-name">Имя:</label>
+                <input class="personal-list__field" id="personal-list__first-name" type="text" name="first-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы.">
+              </li>
+              <li class="personal-list__item">
+                <label class="personal-list__value" for="personal-list__middle-name">Отчество:</label>
+                <input class="personal-list__field" id="personal-list__middle-name" type="text" name="middle-name" placeholder="Введите ваше отчество *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы.">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="elbrus-form__data-app data-app">
+            <legend class="data-app__title">Где отдыхали?</legend>
+            <p class="data-app__text">Где отдыхали?</p>
+            <ul class="data-app__apps-list app-list">
+              <li class="app-list__item">
+                <label class="app-list__value">
+                  <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="azau" checked="">
+                  Поляна АЗАУ
+                  <span class="radio-indicator"></span>
+                </label>
+              </li>
+              <li class="app-list__item">
+                <label class="app-list__value">
+                  <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="cheget">
+                  Поляна ЧЕГЕТ
+                  <span class="radio-indicator"></span>
+                </label>
+              </li>
+              <li class="app-list__item">
+                <label class="app-list__value">
+                  <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="terskol">
+                  Терскол
+                  <span class="radio-indicator"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="elbrus-form__data-contacts data-contacts">
+            <legend class="data-contacts__title">Контактная информация</legend>
+            <ul class="data-contacts__contact-list contact-list">
+              <li class="contact-list__item">
+                <label class="contact-list__value" for="contact-list__phone">Номер телефона</label>
+                <div class="contact-list__box" tabindex="0">
+                  <input class="contact-list__field" id="contact-list__phone" type="tel" name="phone" title="Номер должен содержать от 7 до 11 цифр и начинаться с 7" value="" minlength="7" maxlength="11" pattern="\d{7,11}" placeholder="Номер, пожалуйста">
+                  <label class="contact-list__icon contact-list__icon--phone" for="contact-list__phone">Номер телефона</label>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <label class="contact-list__value" for="contact-list__email">Адрес почты</label>
+                <div class="contact-list__box email-field" tabindex="0">
+                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *">
+                  <label class="contact-list__icon contact-list__icon--email" for="contact-list__email">Адрес почты</label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="elbrus-form__data-progress data-progress">
+            <legend class="data-progress__title">Посещенные достопримечательности</legend>
+            <p class="data-progress__text">Посещенные достопримечательности</p>
+            <ul class="data-progress__progress-list progress-list">
+              <li class="progress-list__item">
+                <label class="progress-list__value">
+                  <input class="progress-list__checkbox visually-hidden" type="checkbox" name="dolina" value="true" checked="">
+                  Долина нарзанов
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </li>
+              <li class="progress-list__item">
+                <label class="progress-list__value">
+                  <input class="progress-list__checkbox visually-hidden" type="checkbox" name="elbrus" value="true" checked="">
+                  Эльбрус
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </li>
+              <li class="progress-list__item">
+                <label class="progress-list__value">
+                  <input class="progress-list__checkbox visually-hidden" type="checkbox" name="lednik" value="true">
+                  Ледник семерка
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </li>
+              <li class="progress-list__item">
+                <label class="progress-list__value">
+                  <input class="progress-list__checkbox visually-hidden" type="checkbox" name="vodopady" value="true">
+                  Комплекс водопадов Су-Аузусу
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </li>
+              <li class="progress-list__item">
+                <label class="progress-list__value">
+                  <input class="progress-list__checkbox visually-hidden" type="checkbox" name="polyana" value="true" checked="">
+                  Поляна Эммануэля в Джилы-Су
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </li>
+              <li class="progress-list__item">
+                <label class="progress-list__value">
+                  <input class="progress-list__checkbox visually-hidden" type="checkbox" name="kosy" value="true">
+                  Водопад "Девичьи косы"
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="elbrus-form__data-review data-review">
+            <legend class="data-review__title">Дополнительная информация</legend>
+            <p class="data-review__text">Дополнительная информация</p>
+            <textarea class="data-review__comment" placeholder="Будем рады любой информации" name="text-review" id="text-review"></textarea>
+          </fieldset>
+
+          <div class="elbrus-form__box-btn container">
+            <button class="elbrus-form__submit-btn btn" type="submit">Отправить форму</button>
+            <small class="elbrus-form__required-field">
+                <sup>*</sup> — обязательные <span class="elbrus-form__extended-text">для заполнения</span> поля
+            </small>
+          </div>
+        </form>
+      </section>
+    </main>
+<footer class="page-footer">
+    <div class="container">
+    <p>Разработано в качестве примера <a href="https://vk.com/khamurzov">Хамурзовым А.М.</a> </p>
+  </div>
+      </footer>
+    
+
+   
+    <section class="modal modal-neg">
+      <h2 class="visually-hidden">Всплывающее окно - форма заполнена с ошибками</h2>
+      <div class="modal-neg__text-box">
+        <p class="modal-neg__title">Что-то пошло не так!</p>
+        <p class="modal-neg__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal-neg__btn-box modal-neg__btn-box--grey">
+        <button class="modal-neg__btn btn" type="button">Ok</button>
+      </div>
+    </section>
+
+    <section class="modal modal-pos">
+      <h2 class="visually-hidden">Всплывающее окно - форма заполнена корректно</h2>
+      <div class="modal-pos__text-box">
+        <p class="modal-pos__title">Ваша заявка отправлена</p>
+        <p class="modal-pos__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="modal-pos__btn-box modal-pos__btn-box--grey">
+        <button class="modal-pos__btn btn" type="button">Закрыть окно</button>
+      </div>
+    </section>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
